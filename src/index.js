@@ -16,7 +16,7 @@ module.exports = function getZerosCount(number, base) {
      if(zerosArr [i+1]==repeatedItem)
      {
         div++;
-        zerosArr [i]=Math.floor( zerosArr [i]/div);
+        zerosArr [i]=zerosArr [i]/div^0;
      }
      else if(zerosArr [i+1]!=zerosArr [i])
        div=1;
@@ -50,7 +50,7 @@ module.exports = function getZerosCount(number, base) {
     let zeros=0;
     while(number>0)
     {
-      number=Math.floor(number/divided);
+      number=number/divided^0;
       zeros +=number;
     }
     return zeros;
