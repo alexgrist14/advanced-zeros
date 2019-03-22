@@ -23,14 +23,7 @@ module.exports = function getZerosCount(number, base) {
      
    }
    // По формуле минимальное возможное кол-во нулей и есть ответ
-   let min=zerosArr [0];
-   for(let i=0; i<zerosArr .length;i++)
-   {
-     if(min>zerosArr [i]){
-       min=zerosArr [i];
-     }
-   }
-    return min;
+   return Math.min(...zerosArr);
   }
   // Разбор числа на делители
   function dividing(base){
